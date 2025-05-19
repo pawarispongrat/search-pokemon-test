@@ -1,0 +1,47 @@
+// lib/pokemonTypeInfo.ts
+import {
+  GiHealthNormal,
+  GiAzulFlake,
+  GiSteelClaws,
+  GiFairy,
+  GiInterstellarPath,
+  GiLongAntennaeBug,
+  GiDragonHead,
+  GiGhost,
+  GiMoonClaws,
+  GiFire,
+  GiFist,
+  GiWaterDrop,
+  GiFeatheredWing,
+  GiHighGrass,
+  GiPoisonGas,
+  GiElectric,
+  GiGroundSprout,
+  GiAbstract103,
+  GiStoneBlock,
+} from "react-icons/gi";
+
+export const pokemonTypeInfo: {
+  [key: string]: { icon: React.ComponentType; color: string };
+} = {
+  normal: { icon: GiHealthNormal, color: "#A8A77A" },
+  fighting: { icon: GiFist, color: "#C22E28" },
+  flying: { icon: GiFeatheredWing, color: "#A98FF3" },
+  poison: { icon: GiPoisonGas, color: "#A33EA1" },
+  ground: { icon: GiGroundSprout, color: "#E2BF65" },
+  rock: { icon: GiStoneBlock, color: "#B6A136" },
+  bug: { icon: GiLongAntennaeBug, color: "#A6B91A" },
+  ghost: { icon: GiGhost, color: "#735797" },
+  steel: { icon: GiSteelClaws, color: "#B7B7CE" },
+  fire: { icon: GiFire, color: "#EE8130" },
+  water: { icon: GiWaterDrop, color: "#6390F0" },
+  grass: { icon: GiHighGrass, color: "#7AC74C" },
+  electric: { icon: GiElectric, color: "#F7D02C" },
+  psychic: { icon: GiAbstract103, color: "#F95587" },
+  ice: { icon: GiAzulFlake, color: "#96D9D6" },
+  dragon: { icon: GiDragonHead, color: "#6F35FC" },
+  dark: { icon: GiMoonClaws, color: "#705746" },
+  fairy: { icon: GiFairy, color: "#D685AD" },
+  stellar: { icon: GiInterstellarPath, color: "#FFCC00" },
+  unknown: { icon: GiAbstract103, color: "#A0A0A0" },
+};
