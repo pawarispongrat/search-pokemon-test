@@ -2,6 +2,7 @@
 
 import { ApolloProvider } from "@apollo/client";
 import client from "../lib/apollo";
+import React, { Suspense } from "react";
 import SearchInput from "../components/SearchInput";
 import PokemonResult from "../components/PokemonResult";
 import { MdOutlineCatchingPokemon } from "react-icons/md";
@@ -15,8 +16,12 @@ export default function Home() {
           Pokémon Search
           <MdOutlineCatchingPokemon size={32} />
         </h1>
-        <SearchInput />
-        <PokemonResult />
+        <Suspense fallback={<div>Loading...</div>}>
+          <SearchInput />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <PokemonResult />
+        </Suspense>
       </div>
     </ApolloProvider>
   );

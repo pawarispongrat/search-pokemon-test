@@ -1,3 +1,5 @@
+'use client';
+
 // components/TypeBadge.tsx
 import React from "react";
 import { pokemonTypeInfo } from "../lib/pokemonTypeInfo";
